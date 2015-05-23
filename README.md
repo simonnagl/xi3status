@@ -2,8 +2,7 @@ xi3status
 =========
 
 ## Description ##
-xi3status is a more feature rich and easier to configurate
-replacement of i3status. It is still under developement
+A status line creater for i3bar.
 
 ### Planned features ###
 * Gradient color support

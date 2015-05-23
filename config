@@ -1,10 +1,12 @@
-# This is a default config file for xi3status
+# xi3status - A status line creator for i3bar
+# © 2015 Simon Nagl (see also: LICENSE)
+#
+# config: This is a default config file for xi3status
 # 
 # It is designed to use as many options as possible,
 # not to be a perfect configuration file.
-# This is because there is no perfect file.
 # 
-# Basic syntax description (for details look at the manpage)
+# Basic syntax description (for details see manpage or wiki)
 #
 # Lines starting with # are comments.
 # There are two types of elements parsed.
@@ -17,12 +19,12 @@
 
 [Global]
 logfile="~/.i3/xi3status.log"
-color=#fff
+color=#ffffff
 
 [Time]
 text="<b>%time[hh:mm:ss]</b> Uhr"
 short_text="%time[h:m]"
-color=#fff
+color=#ffffff
 min_width="00:00:00 Uhr"
 align=right
 separator_block_width=9 # default in pixels
@@ -31,7 +33,7 @@ markup=pango
 [Date]
 text="%date[d. MM yyyy]"
 short_text="%date[d.m.y]"
-color=#fff
+color=#ffffff
 min_width=200
 align=left
 separator=false
