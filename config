@@ -1,0 +1,38 @@
+# This is a default config file for xi3status
+# 
+# It is designed to use as many options as possible,
+# not to be a perfect configuration file.
+# This is because there is no perfect file.
+# 
+# Basic syntax description (for details look at the manpage)
+#
+# Lines starting with # are comments.
+# There are two types of elements parsed.
+# 1. Group names in squared brackets: E.g. [Time]
+# 2. Key Value pairs: E.g. key=value
+#
+# A new group begins a new block.
+# Only the group [Global] is used for global
+# configuration issues
+
+[Global]
+logfile="~/.i3/xi3status.log"
+color=#fff
+
+[Time]
+text="<b>%time[hh:mm:ss]</b> Uhr"
+short_text="%time[h:m]"
+color=#fff
+min_width="00:00:00 Uhr"
+align=right
+separator_block_width=9 # default in pixels
+markup=pango
+
+[Date]
+text="%date[d. MM yyyy]"
+short_text="%date[d.m.y]"
+color=#fff
+min_width=200
+align=left
+separator=false
+sparator_block_widht=20 # in pixels
