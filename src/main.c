@@ -16,9 +16,9 @@ void parse_command_line(int *argc, char ***argv) {
 	// Define options
 	static GOptionEntry entries[] =
 	{
+		{ "version", 'V', G_OPTION_FLAG_NONE, G_OPTION_ARG_NONE, &print_version, "Print version information", NULL},
 		{ "debug", 'd', G_OPTION_FLAG_NONE, G_OPTION_ARG_NONE, &debug, "Log debug information", NULL },
 		{ "silent", 's', G_OPTION_ARG_NONE, G_OPTION_ARG_NONE, &silent, "Only log errors", NULL },
-		{ "version", 'V', G_OPTION_FLAG_NONE, G_OPTION_ARG_NONE, &print_version, "Print version information", NULL},
 		{ NULL },
 	};
 
@@ -41,7 +41,7 @@ void parse_command_line(int *argc, char ***argv) {
 
 	// Print version information	
 	if(print_version) {
-		g_print(g_option_context_get_help(context, TRUE, NULL));
+		g_print("xi3status version: %s\n", VERSION);
 		exit(0);
 	}
 
@@ -53,9 +53,9 @@ void parse_command_line(int *argc, char ***argv) {
 		}
 	} else if (silent) {
 		// TODO enable silent logging
-	} else 
+	}
 
-		g_option_context_free(context);
+	g_option_context_free(context);
 }
 
 int main(int argc, char **argv) {

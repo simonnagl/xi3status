@@ -1,5 +1,7 @@
 # binaries
 xi3status
+# version file
+LAST_VERSION
 
 # Object files
 *.o
