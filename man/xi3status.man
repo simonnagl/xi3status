@@ -1,0 +1,38 @@
+xi3status(1)
+===========
+Simon Nagl <simonnagl@aim.com>
+v0.1, May 2015
+
+== NAME
+
+xi3status - status line creator for i3bar
+
+== SYNOPSIS
+
+*xi3status* [*-d*] [*-s*] [*-v*] [*-h]
+
+== OPTIONS
+
+*-d, --debug*::
+Log debug information.
+
+*-s, --silent*::
+Do not log anything.
+
+*-v, --version*::
+Display version number and exit.
+
+*-h, --help*::
+Display a short help message and exit.
+
+== DESCRIPTION
+
+*xi3status* is a program for generating a status bar for
+i3bar or similar programs. It has the same features like
+i3status and more. Especialy the configuration file format
+and color support are impoved.
+
+== CONFIGURATION
+
+xi3status is looking for a configuration file at
+*~/.i3/xi3status.conf (or ~/.config/i3/xi3status.conf)*.

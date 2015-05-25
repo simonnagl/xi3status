@@ -36,5 +36,8 @@ LAST_VERSION
 # Debug files
 *.dSYM/
 
+# Manpage
+*.1
+
 # kdevelop files
 *.kdev4
